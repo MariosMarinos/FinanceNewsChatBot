@@ -4,19 +4,19 @@ This repository contains four main modules, each with its own dedicated README:
 
 - **Fine-Tune Module** (`fine_tune/`)  
   Fine-tuning the `facebook/bart-large-cnn` model with LoRA adapters.  
-  ⇨ See [`fine_tune/README.md`](fine_tune/README.md)
+  ⇨ See [`src/fine_tune/README.md`](fine_tune/README.md)
 
 - **Evaluation Helper** (`summarisation_eval/`)  
   Tools for evaluating abstractive summarisation models (ROUGE, BERTScore).  
-  ⇨ See [`summarisation_eval/README.md`](evaluation/README.md)
+  ⇨ See [`src/summarisation_eval/README.md`](evaluation/README.md)
 
 - **Dataset Creation Module** (`dataset_creation/`)  
   Harvest and preprocess news articles into JSON-Lines datasets.  
-  ⇨ See [`dataset_creation/README.md`](dataset_creation/README.md)
+  ⇨ See [`src/dataset_creation/README.md`](dataset_creation/README.md)
 
 - **Streamlit App** (`ChatBotStreamlit/`)  
   Dockerized Streamlit web interface for interacting with the summarisation pipeline.  
-  ⇨ See [`ChatBotStreamlit/README.md`](streamlit_app/README.md)
+  ⇨ See [`src/ChatBotStreamlit/README.md`](streamlit_app/README.md)
 
 ## 🚀 Getting Started
 
