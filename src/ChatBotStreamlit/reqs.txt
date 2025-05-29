@@ -1,0 +1,12 @@
+beautifulsoup4
+lxml
+langchain-core
+langgraph
+numpy
+pandas
+pyyaml
+requests
+streamlit
+torch
+transformers
+yfinance

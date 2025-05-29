@@ -1,0 +1,9 @@
+# HTTP + HTML parsing
+requests
+beautifulsoup4        # for bs4
+
+# Data processing & splitting
+pandas
+scikit-learn          # for train_test_split
+
+# Standard library modules (no install needed): argparse, json, pathlib, time, datetime, re

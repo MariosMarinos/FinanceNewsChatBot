@@ -1,0 +1,9 @@
+# Core scientific stack
+pandas
+torch
+transformers
+
+# Evaluation metrics
+evaluate
+rouge_score
+bert_score

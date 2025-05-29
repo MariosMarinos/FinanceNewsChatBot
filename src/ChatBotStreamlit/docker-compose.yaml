@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  summariser:
+    build: .
+    # mount your fine-tuned model here:
+    volumes:
+      - ./my_finetuned_model:/models/finetuned
+    environment:
+      # point at the local path in the container
+      FINE_TUNED_MODEL_PATH: /models/finetuned
+      # adjust Streamlit behavior if you like
+      STREAMLIT_SERVER_ENABLE_WATCHDOG: "false"
+    ports:
+      - "8501:8501"

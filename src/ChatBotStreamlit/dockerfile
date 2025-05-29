@@ -1,0 +1,28 @@
+# Dockerfile
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Install system deps *including* CA certs
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    git \
+    ca-certificates \
+    openssl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy & install Python dependencies
+COPY reqs.txt .
+RUN pip install --no-cache-dir -r reqs.txt
+
+# Copy your app code
+COPY annotated_news_pipeline.py app_main.py ./
+
+# Expose port
+EXPOSE 8501
+
+# Launch Streamlit
+CMD ["streamlit", "run", "app_main.py", \
+    "--server.fileWatcherType", "none", \
+    "--server.headless", "true"]

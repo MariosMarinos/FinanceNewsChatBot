@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+/data/
+/output/
+
+# Ignore your fine‐tuned model directory
+src/ChatBotStreamlit/my_finetuned_model/
+
+# Ignore all Python cache directories and files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore raw data in your dataset_creation folder
+src/dataset_creation/data/
